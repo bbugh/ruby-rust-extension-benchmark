@@ -2,7 +2,6 @@
 
 Example from [github.com/squiidz/pair](https://github.com/squiidz/pair)
 
-
 Simple rust to ruby example with [ruru](https://github.com/d-unseductable/ruru).
 
 you need to install `CONFIGURE_OPTS=--enable-shared rbenv install 2.3.0`
