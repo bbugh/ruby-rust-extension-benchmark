@@ -10,6 +10,7 @@ use ruru::{AnyObject, Class, Fixnum, Float, Object};
 methods!(
   AnyObject,
   _itself,
+
   // Note: this is very unsafe for some reason, if an exact float isn't passed
   // in for the Floats (100.0 vs 100), Rust will panic.
   fn cash_flow(cash_in: Float, cash_out: Float, reinvest_rate: Float, term: Fixnum, year: Fixnum) -> Float {

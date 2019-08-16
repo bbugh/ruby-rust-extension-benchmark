@@ -1,7 +1,7 @@
 [package]
-name = "pair"
+name = "cash_flow_rust_ruru"
 version = "0.1.0"
-authors = ["jchaput <piinkyz05@gmail.com>"]
+authors = ["bbugh <whatever@wherever.com>", "jchaput <piinkyz05@gmail.com>"]
 
 [dependencies]
 ruru = "*"
