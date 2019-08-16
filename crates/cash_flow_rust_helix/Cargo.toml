@@ -1,5 +1,5 @@
 [package]
-name = "cash_flow_rust"
+name = "cash_flow_rust_helix"
 version = "0.1.0"
 
 [lib]

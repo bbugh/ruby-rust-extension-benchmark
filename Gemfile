@@ -8,6 +8,6 @@ gem 'benchmark-ips'
 
 gem 'helix-rails'
 gem "cash_flow_c", path: "./cash_flow_c/"
-gem 'cash_flow_rust', path: 'crates/cash_flow_rust'
+gem 'cash_flow_rust_helix', path: 'crates/cash_flow_rust_helix'
 
 gem 'pry'

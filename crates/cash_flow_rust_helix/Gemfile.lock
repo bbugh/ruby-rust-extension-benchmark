@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cash_flow_rust (1.0.0)
+    cash_flow_rust_helix (1.0.0)
       helix_runtime (~> 0.7.5)
 
 GEM
@@ -19,7 +19,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cash_flow_rust!
+  cash_flow_rust_helix!
 
 BUNDLED WITH
    1.17.2

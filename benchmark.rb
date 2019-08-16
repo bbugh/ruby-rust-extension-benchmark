@@ -3,7 +3,7 @@
 require 'bundler/setup'
 
 require 'benchmark/ips'
-require 'cash_flow_rust'
+require 'cash_flow_rust_helix'
 require 'cash_flow_c'
 
 Benchmark::IPS.options[:format] = 'not human'
@@ -18,8 +18,8 @@ raise 'rust fail' unless cash_flow(10000, 800, 50, 30, 5) == RustCalculations.ca
 raise 'c fail' unless cash_flow(10000, 800, 50, 30, 5) == CCalculations.cash_flow(10000, 800, 50, 30, 5)
 
 Benchmark.ips do |x|
-  x.report("ruby cash_flow") { cash_flow(10000, 800, 50, 30, 5) }
-  x.report("rust cash_flow instance") { rc.cash_flow(10000, 800, 50, 30, 5) }
-  x.report("rust cash_flow class") { RustCalculations.cash_flow_class(10000, 800, 50, 30, 5) }
-  x.report("c cash_flow class") { CCalculations.cash_flow(10000, 800, 50, 30, 5) }
+  x.report("ruby method") { cash_flow(10000, 800, 50, 30, 5) }
+  x.report("rust helix instance") { rc.cash_flow(10000, 800, 50, 30, 5) }
+  x.report("rust helix class") { RustCalculations.cash_flow_class(10000, 800, 50, 30, 5) }
+  x.report("c class") { CCalculations.cash_flow(10000, 800, 50, 30, 5) }
 end
