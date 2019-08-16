@@ -1,0 +1,11 @@
+[package]
+name = "pair"
+version = "0.1.0"
+authors = ["jchaput <piinkyz05@gmail.com>"]
+
+[dependencies]
+ruru = "*"
+
+[lib]
+crate_type = ["dylib"]
+

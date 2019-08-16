@@ -1,0 +1,6 @@
+target
+tags
+*.gem
+.ruby-version
+Cargo.lock
+*.dylib

@@ -9,6 +9,11 @@ PATH
     cash_flow_rust_helix (1.0.0)
       helix_runtime (~> 0.7.5)
 
+PATH
+  remote: crates/cash_flow_rust_ruru/ruby/pair
+  specs:
+    pair (0.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -61,6 +66,7 @@ GEM
     crass (1.0.4)
     erubi (1.8.0)
     ffi (1.11.1)
+    fiddle (1.0.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     helix-rails (0.5.0)
@@ -142,7 +148,9 @@ DEPENDENCIES
   cash_flow_c!
   cash_flow_rust_helix!
   ffi
+  fiddle
   helix-rails
+  pair!
   pry
 
 BUNDLED WITH
