@@ -11,6 +11,10 @@ load 'crates/cash_flow_rust_ffi/src/cash_flow_rust_ffi.rb'
 
 Benchmark::IPS.options[:format] = 'not human'
 
+def cash_flow(cash_in, cash_out, reinvest_rate, term, year)
+  (cash_in - cash_out) * ((1.0 + (reinvest_rate / 100.0))**(term - year))
+end
+
 rc = RustCalculations.new
 
 raise 'rust helix fail' unless cash_flow(10000, 800, 50, 30, 5) == RustCalculations.cash_flow_class(10000, 800, 50, 30, 5)
