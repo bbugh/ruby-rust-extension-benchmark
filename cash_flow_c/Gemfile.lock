@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    example_ext (0.2.1)
+    cash_flow_c (0.2.1)
 
 GEM
   remote: https://rubygems.org/
@@ -35,7 +35,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
-  example_ext!
+  cash_flow_c!
   irb
   pry
   rake (~> 10.0)

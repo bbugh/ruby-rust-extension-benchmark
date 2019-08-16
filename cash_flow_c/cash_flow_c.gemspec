@@ -1,13 +1,13 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "example_ext/version"
+require "cash_flow_c/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "example_ext"
-  spec.version       = ExampleExt::VERSION
-  spec.authors       = ["Wataru Ashihara"]
-  spec.email         = ["wataash@example.com"]
+  spec.name          = "cash_flow_c"
+  spec.version       = CCalculations::VERSION
+  spec.authors       = ["Ruby Developer"]
+  spec.email         = ["whatever@wherever.com"]
 
   spec.summary       = %q{Write a short summary, because RubyGems requires one.}
   spec.description   = %q{Write a longer description or delete this line.}
@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-  spec.extensions    = ["ext/example_ext/extconf.rb"]
+  spec.extensions    = ["ext/cash_flow_c/extconf.rb"]
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"

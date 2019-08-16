@@ -1,7 +1,7 @@
 PATH
-  remote: cashflow-c
+  remote: cash_flow_c
   specs:
-    example_ext (0.2.1)
+    cash_flow_c (0.2.1)
 
 PATH
   remote: crates/cash_flow_rust
@@ -138,8 +138,8 @@ PLATFORMS
 
 DEPENDENCIES
   benchmark-ips
+  cash_flow_c!
   cash_flow_rust!
-  example_ext!
   helix-rails
   pry
 

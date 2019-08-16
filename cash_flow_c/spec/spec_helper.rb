@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "example_ext"
+require "cash_flow_c"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
