@@ -8,7 +8,7 @@ gem 'benchmark-ips'
 
 gem 'helix-rails'
 gem "example_ext", path: "./cashflow-c/"
-gem 'text_transform', path: 'crates/text_transform'
+gem 'cash_flow_rust', path: 'crates/cash_flow_rust'
 
 # gem 'cashflow-c', path: "cashflow-c"
 gem 'pry'

@@ -1,0 +1,25 @@
+PATH
+  remote: .
+  specs:
+    cash_flow_rust (1.0.0)
+      helix_runtime (~> 0.7.5)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    helix_runtime (0.7.5)
+      rake (>= 10.0)
+      thor (>= 0.19.4, < 2.0)
+      tomlrb (~> 1.2.4)
+    rake (12.3.3)
+    thor (0.20.3)
+    tomlrb (1.2.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cash_flow_rust!
+
+BUNDLED WITH
+   1.17.2

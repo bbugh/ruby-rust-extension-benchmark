@@ -4,9 +4,9 @@ PATH
     example_ext (0.2.1)
 
 PATH
-  remote: crates/text_transform
+  remote: crates/cash_flow_rust
   specs:
-    text_transform (1.0.0)
+    cash_flow_rust (1.0.0)
       helix_runtime (~> 0.7.5)
 
 GEM
@@ -138,10 +138,10 @@ PLATFORMS
 
 DEPENDENCIES
   benchmark-ips
+  cash_flow_rust!
   example_ext!
   helix-rails
   pry
-  text_transform!
 
 BUNDLED WITH
    1.17.2

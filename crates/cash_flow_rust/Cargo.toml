@@ -1,5 +1,5 @@
 [package]
-name = "text_transform"
+name = "cash_flow_rust"
 version = "0.1.0"
 
 [lib]
