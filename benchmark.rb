@@ -50,7 +50,7 @@ Benchmark.ips do |x|
   # Rust using Ruru class method
   # ========================================
   require 'fiddle'
-  library = Fiddle::dlopen('crates/cash_flow_rust_ruru/ruby/pair/native/libpair.dylib')
+  library = Fiddle::dlopen('crates/cash_flow_rust_ruru/ruby/pair/native/libcash_flow_rust_ruru.dylib')
   Fiddle::Function.new(library['initialize'], [], Fiddle::TYPE_VOIDP).call
 
   x.report("rust ruru class") { RustRuru.cash_flow(10000.0, 800.0, 50.0, 30, 5) }
