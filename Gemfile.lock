@@ -12,7 +12,7 @@ PATH
 PATH
   remote: crates/cash_flow_rust_ruru/ruby/pair
   specs:
-    pair (0.0.1)
+    pair (0.0.2)
 
 GEM
   remote: https://rubygems.org/
