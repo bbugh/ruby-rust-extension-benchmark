@@ -1,0 +1,14 @@
+require "bundler/gem_tasks"
+require "rspec/core/rake_task"
+
+RSpec::Core::RakeTask.new(spec: ["cargo:build"])
+
+namespace :cargo do
+  desc "Cargo build w/release"
+  task :build do
+    `cargo build --release`
+    puts "========= Rust build complete ========="
+  end
+end
+
+task :default => :spec

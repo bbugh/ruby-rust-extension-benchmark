@@ -1,0 +1,14 @@
+[package]
+name = "cash_flow_rust_rutie"
+version = "0.1.0"
+authors = ["Brian Bugh <brainbag@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rutie = "0.6.1"
+
+[lib]
+name = "cash_flow_rust_rutie"
+crate-type = ["dylib"]

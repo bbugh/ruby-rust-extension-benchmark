@@ -5,9 +5,6 @@ require 'benchmark/ips'
 
 Benchmark::IPS.options[:format] = 'not human'
 
-# raise 'rust ffi fail' unless cash_flow(10000, 800, 50, 30, 5) == RustFFI.cash_flow_class(10000, 800, 50, 30, 5)
-# raise 'c fail' unless cash_flow(10000, 800, 50, 30, 5) == CCalculations.cash_flow(10000, 800, 50, 30, 5)
-
 Benchmark.ips do |x|
   # ========================================
   # Standard Ruby method
@@ -54,6 +51,15 @@ Benchmark.ips do |x|
   Fiddle::Function.new(library['initialize'], [], Fiddle::TYPE_VOIDP).call
 
   x.report("rust ruru class") { RustRuru.cash_flow(10000.0, 800.0, 50.0, 30, 5) }
+
+
+  # ========================================
+  # Rust using rutie class method
+  # ========================================
+  require 'cash_flow_rust_rutie'
+  raise 'rust rutie class method fail' unless cash_flow(10000, 800, 50, 30, 5) == RustRutie.cash_flow(10000.0, 800.0, 50.0, 30, 5)
+
+  x.report("rust rutie class") { RustRutie.cash_flow(10000.0, 800.0, 50.0, 30, 5) }
 
 
   # ====================================

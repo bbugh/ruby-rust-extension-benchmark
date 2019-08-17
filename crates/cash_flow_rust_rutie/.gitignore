@@ -1,0 +1,23 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+# rspec failure tracking
+.rspec_status
+
+
+#Added by cargo
+#
+#already existing elements are commented out
+
+/target
+**/*.rs.bk
+
+# it's a library so don't usually don't commit the lock file, 
+# but this is a benchmark so pretend it's binary
+#Cargo.lock

@@ -18,3 +18,7 @@ cd $base_dir
 cd crates/cash_flow_rust_ruru
 bundle install --quiet
 ./build-ruby.sh
+
+cd $base_dir
+cd crates/cash_flow_rust_rutie
+bin/setup
