@@ -40,28 +40,35 @@ has the best tradeoff of API vs performance.
 
 ## Results
 
-
-
 Ordered by fastest to slowest by iterations per second, descending.
 
 ```
 Warming up --------------------------------------
-             c class    223175 i/100ms
-         ruby method    211673 i/100ms
-     rust ruru class    198891 i/100ms
-    rust rutie class    191695 i/100ms
-      rust ffi class    163458 i/100ms
- rust helix instance    120611 i/100ms
-    rust helix class    114611 i/100ms
+             c class    256870 i/100ms
+         ruby method    242356 i/100ms
+    rust rutie class    222419 i/100ms
+     rust ruru class    219317 i/100ms
+      rust ffi class    185809 i/100ms
+ rust helix instance    134728 i/100ms
+    rust helix class    128296 i/100ms
 Calculating -------------------------------------
-                      iterations per second   total iterations      elapsed
-             c class  5483016.5 (±6.0%) i/s -   27491172          in 5.032074s
-         ruby method  4966573.4 (±6.8%) i/s -   24824438          in 5.022462s
-     rust ruru class  4275527.6 (±6.2%) i/s -   21383522          in 5.021156s
-    rust rutie class  4051435.0 (±6.7%) i/s -   20319670          in 5.039406s
-      rust ffi class  3082134.8 (±8.1%) i/s -   15348010          in 5.019943s
- rust helix instance  1875397.8 (±6.1%) i/s -    9429030          in 5.046921s
-    rust helix class  1852779.7 (±5.9%) i/s -    9246236          in 5.008588s
+                      iterations per second   total iters      elapsed
+             c class  6372371.1 (±1.8%) i/s -   32108750     in 5.040398s
+         ruby method  5539582.3 (±4.3%) i/s -   27870940     in 5.041241s
+    rust rutie class  4657473.6 (±3.7%) i/s -   23353995     in 5.022412s
+     rust ruru class  4598947.6 (±2.9%) i/s -   23028285     in 5.012100s
+      rust ffi class  3402816.9 (±2.0%) i/s -   17094428     in 5.025874s
+ rust helix instance  1956356.3 (±2.5%) i/s -    9835144     in 5.030403s
+    rust helix class  1898906.4 (±1.8%) i/s -    9493904     in 5.001337s
+
+Comparison:
+             c class:  6372371.1 i/s
+         ruby method:  5539582.3 i/s - 1.15x  slower
+    rust rutie class:  4657473.6 i/s - 1.37x  slower
+     rust ruru class:  4598947.6 i/s - 1.39x  slower
+      rust ffi class:  3402816.9 i/s - 1.87x  slower
+ rust helix instance:  1956356.3 i/s - 3.26x  slower
+    rust helix class:  1898906.4 i/s - 3.36x  slower
 ```
 
 ## Running the Benchmark Yourself

@@ -67,4 +67,6 @@ Benchmark.ips do |x|
   # ====================================
   require 'cash_flow_c'
   x.report("c class") { CCalculations.cash_flow(10000, 800, 50, 30, 5) }
+
+  x.compare!
 end
