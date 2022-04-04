@@ -1,0 +1,1 @@
+require "cash_flow_rust_magnus/cash_flow_rust_magnus"

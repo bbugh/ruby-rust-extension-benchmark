@@ -10,6 +10,12 @@ PATH
       helix_runtime (~> 0.7.5)
 
 PATH
+  remote: crates/cash_flow_rust_magnus
+  specs:
+    cash_flow_rust_magnus (0.1.0)
+      rake (> 1)
+
+PATH
   remote: crates/cash_flow_rust_rutie
   specs:
     cash_flow_rust_rutie (0.1.0)
@@ -149,6 +155,7 @@ DEPENDENCIES
   benchmark-ips
   cash_flow_c!
   cash_flow_rust_helix!
+  cash_flow_rust_magnus!
   cash_flow_rust_rutie!
   ffi
   fiddle
