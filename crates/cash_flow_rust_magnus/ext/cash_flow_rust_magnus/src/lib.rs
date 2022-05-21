@@ -11,6 +11,6 @@ fn cash_flow(cash_in: f64, cash_out: f64, reinvest_rate: f64, term: i32, year: i
 #[magnus::init]
 fn init() -> Result<(), Error> {
     let module = define_module("RustMagnus")?;
-    module.define_singleton_method("cash_flow", function!(cash_flow, 5));
+    module.define_singleton_method("cash_flow", function!(cash_flow, 5))?;
     Ok(())
 }
