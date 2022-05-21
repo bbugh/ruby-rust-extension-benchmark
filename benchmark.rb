@@ -61,6 +61,13 @@ Benchmark.ips do |x|
 
   x.report("rust rutie class") { RustRutie.cash_flow(10000.0, 800.0, 50.0, 30, 5) }
 
+  # ========================================
+  # Rust using magnus class method
+  # ========================================
+  require 'cash_flow_rust_magnus'
+  raise 'rust magnus class method fail' unless cash_flow(10000, 800, 50, 30, 5) == RustMagnus.cash_flow(10000, 800, 50, 30, 5)
+
+  x.report("rust magnus class") { RustMagnus.cash_flow(10000, 800, 50, 30, 5) }
 
   # ====================================
   # C using standard Ruby extension

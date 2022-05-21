@@ -22,3 +22,7 @@ bundle install --quiet
 cd $base_dir
 cd crates/cash_flow_rust_rutie
 bin/setup
+
+cd $base_dir
+cd crates/cash_flow_rust_magnus
+rake install
